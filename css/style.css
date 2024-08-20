@@ -5,12 +5,23 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-size: cover;
+}
+
+.container{
+    flex-direction: column;
+}
+
 /* Carousel */
 #carousel{
-    margin-top: 30px;
+    margin-top: 50px;
     height: 400px;
     width: 800px;
     position: relative;
+    align-self: center;
 }
 
 #carousel .gallery{
@@ -63,4 +74,26 @@
 
  .active{
     display: block;
+ }
+
+ #thumbnails{
+    width: 800px;
+    margin: 20px auto;
+    height: 80px;
+    gap: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ #thumbnails img{
+    height: 100%;
+    width: 20%;
+    filter: grayscale(1);
+ }
+
+ #thumbnails img.active{
+    filter: grayscale(0);
+    box-shadow: 0 0 10px red;
  }
