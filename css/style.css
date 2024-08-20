@@ -60,3 +60,7 @@
 #carousel i.fa-angle-down{
     bottom: 10px;
  }
+
+ .active{
+    display: block;
+ }
